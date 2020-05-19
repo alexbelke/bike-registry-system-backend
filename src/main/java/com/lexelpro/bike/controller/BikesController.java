@@ -28,7 +28,7 @@ public class BikesController {
 		repository.save(bike);
 	}
 
-	@GetMapping("/{id")
+	@GetMapping("/{id}")
 	public Bike get(@PathVariable("id") long id) {
 		return repository.getOne(id);
 
